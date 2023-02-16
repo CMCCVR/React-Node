@@ -6,6 +6,7 @@ const routes = express.Router()
         .get('/books', LivroController.findAll)
         .get('/book/:id', LivroController.findById)
         .post('/book', LivroController.createBook)
+        .delete('/book/:id', LivroController.deleteById)
 
 
 module.exports = routes;
