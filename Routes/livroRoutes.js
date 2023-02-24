@@ -7,6 +7,7 @@ const routes = express.Router()
         .get('/book/:id', LivroController.findById)
         .post('/book', LivroController.createBook)
         .delete('/book/:id', LivroController.deleteById)
+        .put('/book/:id', LivroController.updateById)
 
 
 module.exports = routes;
